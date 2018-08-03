@@ -1,3 +1,4 @@
+
 class Student
   attr_accessor :id, :name, :grade
 
@@ -37,8 +38,12 @@ class Student
       self.new_from_db(row)
     end.first
   end
-  
+
   def self.count_all_students_in_grade_9
+  end
+
+  def self.students_below_12th_grade
+  end
 
   def save
     sql = <<-SQL
